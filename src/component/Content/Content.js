@@ -1,11 +1,12 @@
 import React from "react";
+import User from "../User/User";
+import {Route, Switch, withRouter} from "react-router-dom";
 
 const Content = (props) => {
     return (
-        <>
-            <p>{props.first_name}</p>
-            <p>{props.last_name}</p>
-        </>
+        <Switch>
+            <Route exact path="/" render={User} />
+        </Switch>
     );
 };
-export default Content;
+export default withRouter(Content);

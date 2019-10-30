@@ -1,4 +1,3 @@
-import * as axios from "axios";
 import fetchJsonp from "fetch-jsonp"
 
 const access_token = "97bf5cdfc44f93271fc2ea1313a63d88bd05f8df8c52847d44b9fe647660aea6bc8f9d9fa68cc207f8bb0";
@@ -11,10 +10,5 @@ export const usersAPI = {
             .then(function(response) {
                 return response.json()
             })
-            // .then(function(json) {
-            //     console.log('parsed json', json)
-            // }).catch(function(ex) {
-            //     console.log('parsing failed', ex)
-            // });
     }
 };
