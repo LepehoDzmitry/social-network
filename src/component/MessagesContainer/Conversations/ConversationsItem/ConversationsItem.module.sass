@@ -1,0 +1,26 @@
+@import "../../../common/sass/vars"
+
+.item
+    display: flex
+    padding: 1rem
+    cursor: pointer
+    +tr
+    &:hover
+        background-color: $hoverColor
+.ava
+    width: 50px
+    height: auto
+    border-radius: 25px
+    margin-right: 1rem
+.textContainer
+    display: flex
+    flex-direction: column
+    overflow: hidden
+    justify-content: center
+.name
+    font-size: 1.25rem
+    font-weight: 400
+.message
+    white-space: nowrap
+    overflow: hidden
+    text-overflow: ellipsis

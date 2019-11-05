@@ -14,5 +14,16 @@
   flex-direction: column
   height: 100%
 
+.link
+  font-size: 1.125rem
+  font-weight: 300
+  line-height: 1
+  padding: 0.5rem 1rem
+  text-decoration: unset
+  +tr
+  &:hover
+    background-color: $hoverColor
+
 .activeLink
-  color: aqua
+  background-color: $activeColor!important
+  color: #ffffff!important

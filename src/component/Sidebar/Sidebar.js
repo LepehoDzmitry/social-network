@@ -6,9 +6,9 @@ const Sidebar = () => {
     return (
         <div className={style.sadeBarContainer}>
             <nav className={style.sadeBar}>
-                <NavLink exact to="/" activeClassName={style.activeLink}>Моя страница</NavLink>
-                <NavLink to="/news" activeClassName={style.activeLink}>Новости</NavLink>
-                <NavLink to="/messages" activeClassName={style.activeLink}>Сообщения</NavLink>
+                <NavLink exact to="/" className={style.link} activeClassName={style.activeLink}>Моя страница</NavLink>
+                <NavLink to="/news" className={style.link} activeClassName={style.activeLink}>Новости</NavLink>
+                <NavLink to="/messages" className={style.link} activeClassName={style.activeLink}>Сообщения</NavLink>
             </nav>
         </div>
     );

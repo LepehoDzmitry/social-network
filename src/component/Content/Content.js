@@ -1,12 +1,17 @@
 import React from "react";
 import User from "../User/User";
-import {Route, Switch, withRouter} from "react-router-dom";
+import {Route, withRouter} from "react-router-dom";
+import MessagesContainer from "../MessagesContainer/MessagesContainer";
+import News from "../News/News";
+import style from "./Content.module.sass"
 
-const Content = (props) => {
+const Content = () => {
     return (
-        <Switch>
-            <Route exact path="/" render={User} />
-        </Switch>
+        <div className={style.container}>
+            <Route exact path="/" render={() => <User />} />
+            <Route path="/news" render={() => <News />} />
+            <Route path="/messages" render={() => <MessagesContainer />} />
+        </div>
     );
 };
 export default withRouter(Content);

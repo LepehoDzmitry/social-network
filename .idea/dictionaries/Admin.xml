@@ -2,6 +2,10 @@
   <dictionary name="Admin">
     <words>
       <w>axios</w>
+      <w>bdate</w>
+      <w>cdfc</w>
+      <w>mdhm</w>
+      <w>newsfeed</w>
     </words>
   </dictionary>
 </component>
